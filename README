@@ -1,0 +1,19 @@
+docker_hhvm_october
+====================
+
+Base docker image to run a October with HHVM
+
+
+October with HHVM on Docker
+---------------
+
+Usage
+-----
+
+To create the image `docker_hhvm_october`, execute the following command on the docker_hhvm_october folder:
+
+        docker build -t docker_hhvm_october .
+
+To run the image and bind to port 80:
+
+        docker run -d -p 80:80 docker_hhvm_october
