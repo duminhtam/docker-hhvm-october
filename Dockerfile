@@ -6,6 +6,7 @@ RUN apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a
     echo 'deb-src http://mirrors.syringanetworks.net/mariadb/repo/10.1/ubuntu trusty main' >> /etc/apt/sources.list && \
     apt-get update && \
     sudo apt-get install -y unzip vim git-core curl wget build-essential python-software-properties && \
+    apt-get install -y software-properties-common && \
     sudo add-apt-repository -y ppa:nginx/stable && \
     sudo apt-get update && \
     sudo apt-get install -y nginx && \
